@@ -1,0 +1,100 @@
+nav{
+    background-color: pink;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav h1{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 250px;
+    text-align: center;
+}
+#navItems{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navItems a{
+    margin: 0 5px;
+}
+
+
+#banner{
+    background-image: url("./img/pink.jpg");
+    width:100%;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+
+}
+
+#contentContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#itemContainer h3{
+    padding:5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#itemContainer .imgContainer{
+    width: 250px;
+    height: 250px;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+#img1{
+    background-image: url("./img/curly\ img.jpg");
+
+}
+#img2{
+    background-image: url("./img/ponytail.jpg");
+}
+#img3{
+    background-image: url("./img/wedding.jpg");
+}
+#img4{
+    background-image: url("./img/puple.jpg");
+}
+#bottomContainer{
+    display: flex;
+}
+#bottomContainer div{
+    width: 50%;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+}
+@media screen and (max-width: 426px){
+    #contentContainer{
+        align-items: center;
+        justify-content: center;
+    }
+    #bottomContainer div{
+        width: 100%;
+    }
+    #bottomContainer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        flex-direction: column;
+        height: 135px;
+    }
+    #navItems{
+        flex-wrap:wrap;
+        width:100%
+    }
+}
+
